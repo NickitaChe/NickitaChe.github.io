@@ -5,13 +5,17 @@
 }
 
 body {
-   margin: 0;
+    margin: 0;
+  
 }
+
 .top {
+    z-index: 1;
+    top: 0px;
     width:100%;
    padding: 10px;
    background: rgba(255, 255, 255, 0.7);
-   position:relative;
+   position: sticky;
    display:  inline-flex;
    
 
@@ -69,37 +73,91 @@ a {
     min-width: 170px;
     min-height: 100px;  
     background: #E51062;
-    border-radius: 60px;
+    border-radius: 15px;
 }
 
+.main{
+    margin-bottom: 40px;
+}
 
 
 .container {
     margin-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    display:inline-block;
+    
 
 }
 
 .double{
+    
     display: flex;
-     justify-content:start ; 
+    flex-basis: 200px;
+     margin: 15px; 
 }
+
+.container h1{
+    margin: 0px;
+    width:fit-content;
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    text-shadow: 1px 1px #000000;
+    font-weight: 900;
+    font-size: 30x;
+    line-height: 30px;  
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 15px ;
+    box-shadow: 12px 12px 1px 2px  #E51062;
+}
+
 .container p{
     display: flex;
-    margin: 0px;
+    margin-top: 15px;
+    margin-right: 10%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;  
     color: #000000;
+
 }
 .container img {
-    display: block;
-    max-width: 50%;
-    max-inline-size: 50%;
-    height: auto;
+    position: sticky;
+    object-fit:fill;
+    margin-left:auto;
+    width:calc(20%+20px);
+    max-width:50%;
+    max-height: 500px;
+    background-color: #ffffff;
+    border-radius: 15px ;
+    box-shadow: 12px 12px 1px 2px  #E51062;
 }
 
+.container h2 {
+    padding-top: 15px;
+    margin-right: 30px;
+    margin: 15px;
+    width:fit-content;
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    text-shadow: 1px 1px #000000;
+    font-weight: 900;
+    font-size: 30x;
+    line-height: 30px;  
+    color: #000000;
+}
+
+.container h6 {
+    
+    display: flex;
+    padding-top: 15px;
+    margin-left: 25px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 20px;  
+    color: #000000;
+}
